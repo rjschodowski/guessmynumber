@@ -22,12 +22,12 @@ document.querySelector('.check').addEventListener('click', function () {
 //When there is no input    
     if (!guess) {
         // document.querySelector('.message').textContent = 'Feed me number or perish!';
-        displayMessage('Feed me number or perish!');
+        displayMessage('Feed me number!');
 
 //When player wins
     } else if (guess === secretNumber) {
         //  document.querySelector('.message').textContent = 'You guessed, you wizard, you!';
-        displayMessage('You guessed, you wizard, you!');
+        displayMessage('You guessed right! Go eat a vegetable!');
          document.querySelector('.number').textContent = secretNumber; 
          document.querySelector('body').style.backgroundColor = '#60b347';
          document.querySelector('.number').style.width = '30rem';
@@ -47,7 +47,7 @@ document.querySelector('.check').addEventListener('click', function () {
             document.querySelector('.score').textContent = score;
         } else {
             // document.querySelector('.message').textContent = 'You lost the game..wah wah wah!';
-            displayMessage('You lost the game..wah wah wah!');
+            displayMessage('Wah, wah, wah...you lose, but you can still eat a vegetable!');
             document.querySelector('.score').textContent = 0;
         }
     }
